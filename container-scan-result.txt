@@ -1,0 +1,33 @@
+No vulnerabilities found
+
+Misconfigurations
+TITLE                                                    	PROVIDER  	ID    	SEVERITY 
+Process can elevate its own privileges                   	Kubernetes	KSV001	MEDIUM  	
+Default capabilities not dropped                         	Kubernetes	KSV003	LOW     	
+Runs as root user                                        	Kubernetes	KSV012	MEDIUM  	
+Root file system is not read-only                        	Kubernetes	KSV014	LOW     	
+Runs with low user ID                                    	Kubernetes	KSV020	LOW     	
+Runs with low group ID                                   	Kubernetes	KSV021	LOW     	
+Container capabilities must only include NET_BIND_SERVICE	Kubernetes	KSV106	LOW     	
+Process can elevate its own privileges                   	Kubernetes	KSV001	MEDIUM  	
+Default capabilities not dropped                         	Kubernetes	KSV003	LOW     	
+Runs as root user                                        	Kubernetes	KSV012	MEDIUM  	
+Root file system is not read-only                        	Kubernetes	KSV014	LOW     	
+Runs with low user ID                                    	Kubernetes	KSV020	LOW     	
+Runs with low group ID                                   	Kubernetes	KSV021	LOW     	
+Default Seccomp profile not set                          	Kubernetes	KSV030	LOW     	
+Container capabilities must only include NET_BIND_SERVICE	Kubernetes	KSV106	LOW     	
+
+
+No secrets found
+
+Policy Results
+TYPE  	MESSAGE                                                                    
+Docker	4.1 Ensure a user for the container has been created (Scored) level 1     	
+Docker	4.6 Ensure HEALTHCHECK instructions have been added to the container image	
+      	(Scored) level 1                                                          	
+Docker	4.7 Ensure update/upgrade instructions are not used in the Dockerfile (Not	
+      	Scored) level 1                                                           	
+Docker	4.9 Ensure COPY is used instead of ADD in Dockerfile (Not Scored) level 1 	
+
+Policy Passed = false
